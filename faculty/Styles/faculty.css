@@ -41,3 +41,16 @@ body {
     transform: scale(1.5);
     overscroll-behavior-x: 0px 12px 32px rbg(0,0,0.5);
 }
+.list-style{
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+.list-style li{
+    background-color: #799EFF;
+    color: #F97A00;
+    padding: 10px 12px 10px 40px;
+    box-shadow: opx 12px 30px rgb(01, 0.2,1.5);
+    position: relative;
+    border-radius: 16px;
+}
