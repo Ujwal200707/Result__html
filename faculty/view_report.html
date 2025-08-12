@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>faculty/view_report.html</title>
+    <title>View Report - Faculty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        select, input[type="submit"] {
+            padding: 7px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #4A90E2;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background: #357ABD;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background: #4A90E2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>View Report</header>
+
+<div class="container">
+    <h2>Course Reports</h2>
+    <form>
+        <label>Course: </label>
+        <select>
+            <option>CSE101 - Front End Development</option>
+            <option>CSE102 - Data Structures</option>
+            <option>CSE103 - Database Management</option>
+        </select>
+        <label>Semester: </label>
+        <select>
+            <option>Odd Semester</option>
+            <option>Even Semester</option>
+        </select>
+        <input type="submit" value="View Report">
+    </form>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>21CS001</td>
+            <td>Ujwal Deevi</td>
+            <td>85</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>21CS002</td>
+            <td>Ravi Kumar</td>
+            <td>78</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>21CS003</td>
+            <td>Priya Sharma</td>
+            <td>92</td>
+            <td>A+</td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>

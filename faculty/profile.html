@@ -1,48 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACULTY PROFILE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to right, #F97A00, #799EFF);
+    }
+
+    .faculty-heading {
+      text-align: center;
+      font-size: 45px;
+      color: blue;
+    }
+
+    .faculty-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+      height: 150px;
+      border: 5px solid #E9E3DF;
+      border-radius: 12px;
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .faculty-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 500px;
+      background-color: #F97A00;
+      border: 2px solid #E9E3DF;
+      border-radius: 12px;
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.5);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .faculty-card:hover {
+      background: radial-gradient(#F97A00, #799EFF);
+      transform: scale(1.1); 
+      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .list-style {
+        display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .list-style li {
+      background-color: #799EFF;
+      color: #F97A00;
+      padding: 10px 12px 10px 40px;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      border-radius: 16px;
+      margin-bottom: 10px;
+      transition: transform 0.3 ease,box-shadow 0.2s ease;
+    }
+    .list-style li::before{
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 8px;
+            height: 20px;
+            color: aquamarine;
+            background-color: #ac0d10;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 12px;
+    }
+    .list-style li:hover{
+        transform: scale(1.2);
+        box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table, td {
+      border: 2px solid black;
+      padding: 10px 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>
-     Faculty Profile
-    </h1>
-    <table>
-        <tr>
-            <td>
-               <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\facultypic.jpg" height="190" width="190" alt="Faculty PROFILE"
-             </td>
-            <td>
-                <p>
-                    its an faculty profile page <br> and all the required information <br>of the faculty will be provided
 
-                </p>
-            </td>
-        </tr>
-    </table>
-<hr>
+  <h1 class="faculty-heading">Faculty Profile</h1>
 
-    <ul>
-        <li><u>My courses </u></li>
-        <li><u>Student list <u>
-        </li>
-        <li> <u>Update resume</u></li>
+  <div class="faculty-card">
+    <img src="download (2).jpg" class="faculty-img" alt="Faculty Photo" />
+
+    <p>
+      It's a faculty profile page <br />
+      and all the required information <br />
+      of the faculty will be provided
+    </p>
+
+    <ul class="list-style">
+      <li>My courses</li>
+      <li>Student list</li>
+      <li>Update resume</li>
     </ul>
-    <hr>
-       
-    <h2>Faculty  Details</h2>
-    <table border="10">
-        <tr>
-            <td> <b>NAME</b></td><td><i>ANJALI</i></td>
-        </tr>
-        <tr>
-            <td> <b>EMAIL</b></td><td> <u>Anjali@domain.com</u></td>
-        </tr>
-        <tr>
-            <td><b>Role</b> </td><td><b>FEDW Professor</b></td>
-        </tr>
+
+    <h2>Faculty Details</h2>
+    <table>
+      <tr>
+        <td><b>NAME</b></td>
+        <td><i>ANJALI</i></td>
+      </tr>
+      <tr>
+        <td><b>EMAIL</b></td>
+        <td><u>Anjali@domain.com</u></td>
+      </tr>
+      <tr>
+        <td><b>Role</b></td>
+        <td><b>FEDW Professor</b></td>
+      </tr>
     </table>
+  </div>
+
 </body>
 </html>

@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>faculty/veiw_students.html</title>
+    <title>Faculty Dashboard - View Students</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+        .action-btn {
+            background-color: #4A90E2;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .action-btn:hover {
+            background-color: #357ABD;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    Faculty Dashboard - View Students
+</header>
+
+<div class="container">
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Ujwal</td>
+                <td>CSE</td>
+                <td>ujwal@example.com</td>
+                <td>
+                    <button class="action-btn">View</button>
+                    <button class="action-btn">Message</button>
+                </td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Rishi</td>
+                <td>ECE</td>
+                <td>rishi@example.com</td>
+                <td>
+                    <button class="action-btn">View</button>
+                    <button class="action-btn">Message</button>
+                </td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Krishna</td>
+                <td>IT</td>
+                <td>krishna@example.com</td>
+                <td>
+                    <button class="action-btn">View</button>
+                    <button class="action-btn">Message</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>

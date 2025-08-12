@@ -4,12 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            background-color: #4CAF50;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select, input[type="submit"], input[type="reset"] {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1><b>ADD STUDENT RESULT OF THE STUDENT</b></h1>
 
     <form>
-        <label for="year">academic year:</label>
+        <label for="year">Academic Year:</label>
         <select name="year" id="year">
             <option>2023-24</option>
             <option>2022-23</option>
@@ -23,30 +110,28 @@
         </select>
 
         <select name="semester" id="semester">
-            <option>odd sem</option>
-            <option>even sem</option>
+            <option>Odd Sem</option>
+            <option>Even Sem</option>
         </select>
 
-        <input type="submit" value="get">
-        <input type="reset" value="reset">
+        <input type="submit" value="Get">
+        <input type="reset" value="Reset">
     </form>
 
-    <hr>
+    <h2 style="text-align:center; color:#333;">STUDENTS RESULTS</h2>
 
-    <h2><b>STUDENTS RESULTS</b></h2>
-
-    <table border="1" cellpadding="5" cellspacing="0">
+    <table>
         <tr>
-            <th>s.no</th>
-            <th>name</th>
-            <th>i.d</th>
-            <th>course</th>
-            <th>marks</th>
-            <th>action</th>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Action</th>
         </tr>
         <tr>
             <td>1</td>
-            <td>srinu</td>
+            <td>Srinu</td>
             <td>123</td>
             <td>FrontEnd</td>
             <td><input type="text" name="marks1"></td>
@@ -54,15 +139,15 @@
         </tr>
         <tr>
             <td>2</td>
-            <td>shiva</td>
+            <td>Shiva</td>
             <td>123</td>
             <td>FrontEnd</td>
             <td><input type="text" name="marks2"></td>
-            <td><input type="text" value="pass" ></td>
+            <td><input type="text" value="pass"></td>
         </tr>
         <tr>
             <td>3</td>
-            <td>raghu</td>
+            <td>Raghu</td>
             <td>123</td>
             <td>FrontEnd</td>
             <td><input type="text" name="marks3"></td>
@@ -71,4 +156,3 @@
     </table>
 </body>
 </html>
-

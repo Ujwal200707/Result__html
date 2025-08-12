@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin/usr_mangmt.html</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Management</title>
+  <link rel="stylesheet" href="usr_mngt.css">
 </head>
 <body>
-    
+
+  <div class="container">
+
+    <div class="registration-box">
+      <h2>User Registration</h2>
+      <form class="user-form">
+        <input type="text" placeholder="Enter Name" required />
+        <input type="email" placeholder="Enter Email" required />
+        <input type="password" placeholder="Enter Password" required />
+        <select required>
+          <option value="">Choose Role</option>
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select>
+        <div class="form-buttons">
+          <button type="submit" class="create-btn">Register User</button>
+          <button type="reset" class="clear-btn">Clear</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="table-box">
+      <h2>User Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bob</td>
+            <td>bob@gmail.com</td>
+            <td>Admin</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ram</td>
+            <td>ram@gmail.com</td>
+            <td>User</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
 </body>
-</html> 
+</html>

@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student/view_profile.html</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to right, #5A827E, #F16767);
+    }
+
+    .student-heading {
+      text-align: center;
+      font-size: 45px;
+      color: #FF3F33;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .student-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+      height: 150px;
+      border: 5px solid #D92C54;
+      border-radius: 12px;
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .student-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 500px;
+      background-color: #799EFF;
+      border: 2px solid #9929EA;
+      border-radius: 12px;
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.5);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .student-card:hover {
+      background: radial-gradient(#bda51a, #ED3500);
+      transform: scale(1.1); 
+      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .list-style {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .list-style li {
+      background-color: #799EFF;
+      color: #F97A00;
+      padding: 10px 12px 10px 40px;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+      border-radius: 16px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+
+    .list-style li::before {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 8px;
+      height: 20px;
+      color: aquamarine;
+      background-color: #ac0d10;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .list-style li:hover {
+      transform: scale(1.2);
+      box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table, td {
+      border: 2px solid black;
+      padding: 10px 20px;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h1 class="student-heading">Student Profile</h1>
+
+  <div class="student-card">
+    <img src="download (1).jpg" class="student-img" alt="student Photo" />
+
+    <p>
+      It's a student profile page <br />
+      and all the required information <br />
+      of the student will be provided
+    </p>
+
+    <ul class="list-style">
+      <li>My courses</li>
+      <li>Results</li>
+      <li>Announcements</li>
+    </ul>
+
+    <h2>Student Details</h2>
+    <table>
+      <tr>
+        <td><b>NAME</b></td>
+        <td><i>Ram</i></td>
+      </tr>
+      <tr>
+        <td><b>EMAIL</b></td>
+        <td><u>ram@domain.com</u></td>
+      </tr>
+      <tr>
+        <td><b>University ID</b></td>
+        <td><b>2400031546</b></td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>

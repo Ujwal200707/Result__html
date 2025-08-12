@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student/veiw_courses.html</title>
+    <title>Student Course Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background: #4A90E2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        select, input[type="submit"] {
+            padding: 7px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #4A90E2;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background: #357ABD;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>Student Course Dashboard</header>
+
+<div class="container">
+    <h2>View My Courses</h2>
+    <form>
+        <label>Select Semester: </label>
+        <select>
+            <option>Odd Semester</option>
+            <option>Even Semester</option>
+        </select>
+        <input type="submit" value="View">
+    </form>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Faculty</th>
+            <th>Credits</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTE101</td>
+            <td>Front End Development</td>
+            <td>Mr. Ravi</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>HTE102</td>
+            <td>Data Structures</td>
+            <td>Ms. Priya</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>HTE103</td>
+            <td>Database Management</td>
+            <td>Mr. Suresh</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>

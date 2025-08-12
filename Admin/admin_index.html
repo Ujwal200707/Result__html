@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ADMIN DASHBOARD</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADMIN DASHBOARD</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .card-label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .f {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-    <center>
-<h1>ADMIN DASHBOARD</h1>
-<hr>
-  <table border="10">
-    <center>
-        <tr>
-            <td>
-              <a href="C:\FrontEnd\Results_html\Admin\profile.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\adminstratorpic.jpg" alt="PROFILE" width="150" height="150"> </a>
-        </td>
-         <td>
-              <a href="C:\FrontEnd\Results_html\Admin\usr_mangmt.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\user_managmentpic.jpg" alt="user management" width="150" height="150"> </a>
-        </td>
-         <td>
-              <a href="C:\FrontEnd\Results_html\Admin\course_mngmt.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\cousre_manegment pic.jpg"alt="course_mngmt" width="150" height="150"> </a>
-        </td>
-            <td>
-              <a href="C:\FrontEnd\Results_html\Admin\c_m_f.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\c_m_f pic.png" alt="c_m_f" width="150" height="150"> </a>
-        </td>
 
-    </tr>
-    </center>
-     <tr>
-         <td>
-              <a href="C:\FrontEnd\Results_html\Admin\c_m_s.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\c_m_s pic.jpg" alt="c_m_s" width="150" height="150"> </a>
-        </td>
-            <td>
-              <a href="C:\FrontEnd\Results_html\Admin\report.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\reportlogo.jpg"alt="REPORT" width="150" height="150"> </a>
-        </td>
-         <td>
-              <a href="C:\FrontEnd\Results_html\Admin\result.html" target="">
-              <img src="C:\Users\LAXMIKANTH REDDY M\OneDrive\Desktop\resultslogo.png"alt="RESULTS" width="150" height="150"> </a>
-        </td>
-            </tr>
-    </table>
-</center>
-   </body>
+  <h1>ADMIN DASHBOARD</h1>
+  <hr>
+
+  <div class="dashboard-container">
+    <a href="profile.html" class="card">
+      <img src="download.jpeg" alt="Profile">
+      <div class="card-label">Profile</div>
+    </a>
+    
+    <a href="usr_mangmt.html" class="card">
+      <img src="download copy.png" alt="User Management">
+      <div class="card-label">User Management</div>
+    </a>
+
+    <a href="course_mngmt.html" class="card">
+      <img src="download copy.jpeg" alt="Course Management">
+      <div class="card-label">Course Management</div>
+    </a>
+
+    <a href="c_m_f.html" class="card">
+      <img src="download (1).png" alt="cmf">
+      <div class="card-label">cmf</div>
+    </a>
+
+    <a href="c_m_s.html" class="card">
+      <img src="download (2).jpeg" alt="Course Management">
+      <div class="card-label">cms</div> 
+    </a>
+
+    <a href="report.html" class="card">
+      <img src="download (1).jpeg" alt="Report">
+      <div class="card-label">Report</div>
+    </a>
+
+    <a href="result.html" class="card">
+      <img src="download (3).jpeg" alt="Result">
+      <div class="card-label">Result</div>
+    </a>
+  </div>
+
+</body>
 </html>

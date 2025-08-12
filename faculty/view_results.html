@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>faculty/view_results.html</title>
+    <title>Faculty - View Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fc;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 18px;
+            text-align: center;
+            font-size: 26px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .table-container {
+            width: 90%;
+            margin: 30px auto;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 14px;
+            text-align: center;
+        }
+        th {
+            background: #1abc9c;
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        tr:nth-child(even) {
+            background-color: #f4f6f8;
+        }
+        tr:hover {
+            background-color: #e2f6f3;
+        }
+        .btn {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+        .btn-view {
+            background-color: #27ae60;
+        }
+        .btn-view:hover {
+            background-color: #1e8449;
+        }
+        .btn-edit {
+            background-color: #2980b9;
+        }
+        .btn-edit:hover {
+            background-color: #21618c;
+        }
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 12px;
+                padding: 10px;
+            }
+            .btn {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>📊 Faculty - View Student Results</header>
+
+<div class="table-container">
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>2023001</td>
+            <td>CSE101</td>
+            <td>85</td>
+            <td>A</td>
+            <td>
+                <button class="btn btn-view">View</button>
+                <button class="btn btn-edit">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>2023002</td>
+            <td>CSE102</td>
+            <td>92</td>
+            <td>A+</td>
+            <td>
+                <button class="btn btn-view">View</button>
+                <button class="btn btn-edit">Edit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>David Lee</td>
+            <td>2023003</td>
+            <td>CSE103</td>
+            <td>78</td>
+            <td>B+</td>
+            <td>
+                <button class="btn btn-view">View</button>
+                <button class="btn btn-edit">Edit</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>
