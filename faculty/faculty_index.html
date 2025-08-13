@@ -4,46 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FACULTY DASHBOARD</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3f51b5, #2196f3);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .card span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <h1>FACULTY DASHBOARD</h1>
-        <table border="5">
-            <tr>
-                <td>
-                    <a href="profile.html" target="">
-                        <img src="faculty.png" alt="PROFILE" width="150" height="150">
-                    </a>
-                </td>
-                <td>
-                    <a href="veiw_students.html" target="">
-                        <img src="view student.png" alt="VIEW STUDENTS" width="150" height="150">
-                    </a>
-                </td>
-                <td>
-                    <a href="view_course.html" target="">
-                        <img src="view course.jpeg" alt="VIEW COURSES" width="150" height="150">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="post_marks.html" target="">
-                        <img src="post marks.png" alt="POST MARKS" width="150" height="150">
-                    </a>
-                </td>
-                <td>
-                    <a href="view_report.html" target="">
-                        <img src="view report.png" alt="VIEW REPORT" width="150" height="150">
-                    </a>
-                </td>
-                <td>
-                    <a href="view_results.html" target="">
-                        <img src="view result.png" alt="VIEW RESULTS" width="150" height="150">
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </center>
+    <h1>FACULTY DASHBOARD</h1>
+    <div class="dashboard">
+        <div class="card">
+            <a href="profile.html">
+                <img src="faculty.png" alt="PROFILE">
+                <span>PROFILE</span>
+            </a>
+        </div>
+        <div class="card">
+            <a href="veiw_students.html">
+                <img src="view student.png" alt="VIEW STUDENTS">
+                <span>VIEW STUDENTS</span>
+            </a>
+        </div>
+        <div class="card">
+            <a href="view_course.html">
+                <img src="view course.jpeg" alt="VIEW COURSES">
+                <span>VIEW COURSES</span>
+            </a>
+        </div>
+        <div class="card">
+            <a href="post_marks.html">
+                <img src="post marks.png" alt="POST MARKS">
+                <span>POST MARKS</span>
+            </a>
+        </div>
+        <div class="card">
+            <a href="view_report.html">
+                <img src="view report.png" alt="VIEW REPORT">
+                <span>VIEW REPORT</span>
+            </a>
+        </div>
+        <div class="card">
+            <a href="view_results.html">
+                <img src="view result.png" alt="VIEW RESULTS">
+                <span>VIEW RESULTS</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
