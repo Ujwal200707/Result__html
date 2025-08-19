@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+
+        ul li {
+            background: #007bff;
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        ul li:hover {
+            background: #0056b3;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        select, input[type="submit"] {
+            padding: 8px 12px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        table a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>STUDENT REPORT</h1>
+
+    <ul>
+        <li><a href="C:\FrontEnd\Results_html\Admin\result.html">ADD RESULT</a></li>
+        <li><a href="#">UPDATE RESULT</a></li>
+        <li><a href="#">DELETE RESULT</a></li>
+        <li><a href="#">POST NOTIFICATION</a></li>
+    </ul>
+
+    <h2>STUDENTS RESULTS</h2>
+
+    <p><b>Select the course:</b></p>
+
+    <form>
+        <select>
+            <option>FrontEnd</option>
+            <option>Backend</option>
+            <option>Data Science</option>
+        </select>
+        <input type="submit" value="GET">
+    </form>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ravi</td>
+            <td>123</td>
+            <td><i>FrontEnd</i></td>
+            <td>
+                • <a href="#">Edit</a><br>
+                • <a href="#">Change</a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ramu</td>
+            <td>124</td>
+            <td><i>FrontEnd</i></td>
+            <td>
+                • <a href="#">Edit</a><br>
+                • <a href="#">Change</a>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Revi</td>
+            <td>125</td>
+            <td><i>FrontEnd</i></td>
+            <td>
+                • <a href="#">Edit</a><br>
+                • <a href="#">Change</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

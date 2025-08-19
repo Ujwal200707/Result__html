@@ -8,25 +8,25 @@
     body {
       margin: 0;
       padding: 20px;
-      background: linear-gradient(to right, #dcd505, #14ba0b);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e0e7ff);
     }
 
     .admin-heading {
       text-align: center;
       font-size: 45px;
-      color: #FF3F33;
+      color: #3b82f6;
       margin: 20px auto;
-      display: block;
     }
 
     .admin-img {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       width: 150px;
       height: 150px;
-      border: 5px solid #D92C54;
-      border-radius: 12px;
+      border: 5px solid #3b82f6;
+      border-radius: 50%;
+      object-fit: cover;
       box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
     }
 
@@ -36,20 +36,19 @@
       align-items: center;
       gap: 20px;
       max-width: 500px;
-      background-color: #799EFF;
-      border: 2px solid #9929EA;
-      border-radius: 12px;
-      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.5);
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px;
-      transition: transform 0.3s ease;
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 16px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      margin: 30px auto;
+      padding: 20px;
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
     .admin-card:hover {
-      background: radial-gradient(#bda51a, #ED3500);
-      transform: scale(1.1); 
-      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.5);
+      background: #f0f9ff;
+      transform: scale(1.03); 
+      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15);
     }
 
     .list-style {
@@ -57,17 +56,21 @@
       list-style: none;
       gap: 20px;
       padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .list-style li {
-      background-color: #799EFF;
-      color: #F97A00;
-      padding: 10px 12px 10px 40px;
-      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+      background-color: #e0f2fe;
+      color: #0369a1;
+      padding: 10px 20px 10px 40px;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
       position: relative;
-      border-radius: 16px;
+      border-radius: 12px;
       margin-bottom: 10px;
-      transition: transform 0.3s ease, box-shadow 0.2s ease;
+      font-weight: 500;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
     }
 
     .list-style li::before {
@@ -75,28 +78,58 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 8px;
-      height: 20px;
-      color: aquamarine;
-      background-color: #ac0d10;
+      left: 12px;
+      color: white;
+      background-color: #0ea5e9;
+      padding: 2px;
+      border-radius: 50%;
+      font-size: 10px;
+      height: 16px;
+      width: 16px;
       display: flex;
-      align-content: center;
+      align-items: center;
       justify-content: center;
-      font-size: 12px;
+      line-height: 1;
     }
 
     .list-style li:hover {
-      transform: scale(1.2);
-      box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+      background-color: #bae6fd;
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
     }
 
     table {
       border-collapse: collapse;
+      width: 100%;
     }
 
     table, td {
-      border: 2px solid black;
-      padding: 10px 20px;
+      border: 1px solid #94a3b8;
+      padding: 12px 16px;
+      font-size: 16px;
+    }
+
+    table td:first-child {
+      background-color: #f1f5f9;
+      font-weight: bold;
+      color: #1e293b;
+      width: 40%;
+    }
+
+    table td:last-child {
+      color: #334155;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-top: 10px;
+    }
+
+    p {
+      color: #334155;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -108,9 +141,8 @@
     <img src="download (3).jpeg" class="admin-img" alt="Admin Photo" />
 
     <p>
-      It's an admin profile page <br />
-      and all the required information <br />
-      of the admin will be provided
+      This is an admin profile page.<br />
+      All necessary information about the admin is displayed below.
     </p>
 
     <ul class="list-style">
@@ -122,16 +154,16 @@
     <h2>Admin Details</h2>
     <table>
       <tr>
-        <td><b>NAME</b></td>
-        <td><i>Ram</i></td>
+        <td>NAME</td>
+        <td>Ram</td>
       </tr>
       <tr>
-        <td><b>EMAIL</b></td>
+        <td>EMAIL</td>
         <td><u>ram@domain.com</u></td>
       </tr>
       <tr>
-        <td><b>Admin ID</b></td>
-        <td><b>2400031546</b></td>
+        <td>Admin ID</td>
+        <td>2400031546</td>
       </tr>
     </table>
   </div>
