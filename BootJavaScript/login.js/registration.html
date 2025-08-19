@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-3" style="max-width: 400px;">
+        <h2 class="mb-4">Register</h2>
+
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name:</label>
+            <input type="text" id="firstName" class="form-control" placeholder="Enter first name">
+        </div>
+
+        <div class="mb-3">
+            <label for="middleName" class="form-label">Middle Name:</label>
+            <input type="text" id="middleName" class="form-control" placeholder="Enter middle name">
+        </div>
+
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Enter last name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <div>
+                <input type="radio" id="genderMale" name="gender" value="Male">
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderFemale" name="gender" value="Female" class="ms-3">
+                <label for="genderFemale">Female</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Enter phone number">
+        </div>
+
+        <div class="mb-3">
+            <label for="regEmail" class="form-label">Email:</label>
+            <input type="email" id="regEmail" class="form-control" placeholder="Enter email">
+        </div>
+
+        <div class="mb-3">
+            <label for="regPassword" class="form-label">Password:</label>
+            <input type="password" id="regPassword" class="form-control" placeholder="Enter password">
+        </div>
+
+        <div class="mb-3">
+            <label for="regConfirmPassword" class="form-label">Retype Password:</label>
+            <input type="password" id="regConfirmPassword" class="form-control" placeholder="Retype password">
+        </div>
+
+        <button class="btn btn-success w-100" onclick="register()">Register</button>
+    </div>
+
+    <script src="register.js"></script>
+</body>

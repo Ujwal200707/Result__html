@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body class="bg-light">
+
+    <div class="container mt-3" style="max-width: 400px;">
+        <h2 class="mb-4">Login</h2>
+
+        <div class="mb-3">
+            <label for="txtusername" class="form-label">Username:</label>
+            <input type="text" id="txtusername" class="form-control" placeholder="Enter username">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtpassword" class="form-label">Password:</label>
+            <input type="password" id="txtpassword" class="form-control" placeholder="Enter password">
+        </div>
+
+        <button class="btn btn-primary w-100" onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('txtusername').value;
+            const password = document.getElementById('txtpassword').value;
+
+            if(username === "admin" && password === "1234") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+
+</body>
+</html>
